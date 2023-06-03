@@ -28,10 +28,7 @@ const Select = () => {
   };
 
   const setzoom = (e) => {
-    if (
-      e.target.options[window.event.target.selectedIndex].text ===
-      "India"
-    ) {
+    if (e.target.options[window.event.target.selectedIndex].text === "India") {
       setzoomFunc(4);
     } else {
       setzoomFunc(7);
@@ -64,10 +61,7 @@ const Select = () => {
         }
       }
     } else {
-      if (
-        e.target.options[window.event.target.selectedIndex].text ==
-        "India"
-      ) {
+      if (e.target.options[window.event.target.selectedIndex].text == "India") {
         dispatch({
           type: "avgReducer",
           payload: parseInt(countryAvgFinal),

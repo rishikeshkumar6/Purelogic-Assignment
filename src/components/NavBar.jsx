@@ -1,12 +1,10 @@
-import React from 'react'
-import Select from './Select'
-import TimeNabBar from './TimeNabBar';
+import React from "react";
+import Select from "./Select";
+import TimeNabBar from "./TimeNabBar";
 // import {useSelector} from 'react-redux'
 
 const NavBar = () => {
-
-// const avg = useSelector(state=>state.custom.avg)
-    
+  // const avg = useSelector(state=>state.custom.avg)
 
   return (
     <div className="nav">
@@ -68,6 +66,6 @@ const NavBar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default NavBar
+export default NavBar;
