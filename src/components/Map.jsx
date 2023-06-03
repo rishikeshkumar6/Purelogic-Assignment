@@ -7,8 +7,7 @@ import axios from "axios";
 
 export default function Map() {
   // const dispatch = useDispatch();
-  mapboxgl.accessToken =
-    "pk.eyJ1Ijoicm9oaXRzYWNoNTAiLCJhIjoiY2t6enB3NnJ2MGMzNzNibmFwa3cwMHBzcSJ9.WGPktzbJ7B1eZSkMR2djKw";
+  mapboxgl.accessToken = import.meta.env.VITE_MAPBOOX_ACCESS_TOKEN;
   const data = useSelector((state) => state.custom.data);
   const isLoading = useSelector((state) => state.custom.isLoading);
   const latlong = useSelector((state) => state.custom.latlong);
@@ -19,7 +18,7 @@ export default function Map() {
   useEffect(() => {
     mapHtml.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/rohitsach50/ckwkg30zm8rdv14oc4tmffjv0",
+      style: import.meta.env.VITE_MAPBOX_STYLE,
       center: [78.9629, 20.5937],
       zoom: 4,
     });
