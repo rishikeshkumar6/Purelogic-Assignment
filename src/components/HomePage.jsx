@@ -15,7 +15,7 @@ const HomePage = () => {
         <NavBar />
         {isLoading ? <Loading /> : <Map />}
       </div>
-    );
+    )
 }
 
 export default HomePage
