@@ -1,6 +1,6 @@
 # Vite ⚡
 
-> Next Generation Frontend Tooling
+> Next Generation Frontend Tool
 
 - 💡 Instant Server Start
 - ⚡️ Lightning Fast HMR
